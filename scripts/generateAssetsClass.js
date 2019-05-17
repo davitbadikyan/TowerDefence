@@ -130,7 +130,7 @@ for (var i in gameAssets) {
         for (var ext in gameAssets[i]) {
             if (((shell.grep(/^[\s\S]*?"tiledversion"/g, ('assets/' + i + '.' + gameAssets[i][ext]))).length > 1) && ((shell.grep(/^[\s\S]*?"tilewidth"/g, ('assets/' + i + '.' + gameAssets[i][ext]))).length > 1) && ((shell.grep(/^[\s\S]*?"tileheight"/g, ('assets/' + i + '.' + gameAssets[i][ext]))).length > 1)) {
                 loaderTypes.tilemap_json[i] = gameAssets[i];
-                
+
                 isItATilemap = true;
                 break;
             }
@@ -145,7 +145,7 @@ for (var i in gameAssets) {
         loaderTypes.text[i] = gameAssets[i];
     } else if (scriptType) {
         loaderTypes.script[i] = gameAssets[i];
-    }  else if (shaderType) {
+    } else if (shaderType) {
         loaderTypes.shader[i] = gameAssets[i];
     } else {
         loaderTypes.misc[i] = gameAssets[i];
@@ -182,7 +182,7 @@ if (!Object.keys(loaderTypes.spritesheet).length) {
         shell.ShellString('\n    export class ' + toPascalCase(i) + ' {').toEnd(assetsClassFile);
         shell.ShellString('\n        static getName(): string { return \'' + i.split('/').pop() + '\'; }\n').toEnd(assetsClassFile);
 
-         shell.ShellString('\n        static get' + loaderTypes.spritesheet[i][0].toUpperCase() + '(): string { return require(\'assets/' + i + '.' + loaderTypes.spritesheet[i][0] + (loaderTypes.spritesheet[i][1] ? '.' + loaderTypes.spritesheet[i][1] : '') + '\'); }').toEnd(assetsClassFile);
+        shell.ShellString('\n        static get' + loaderTypes.spritesheet[i][0].toUpperCase() + '(): string { return require(\'assets/' + i + '.' + loaderTypes.spritesheet[i][0] + (loaderTypes.spritesheet[i][1] ? '.' + loaderTypes.spritesheet[i][1] : '') + '\'); }').toEnd(assetsClassFile);
 
         var spritesheetProperties = i.split('.')[1].replace('[', '').replace(']', '').split(',');
         if (spritesheetProperties.length < 2 || spritesheetProperties.length > 5) {
@@ -374,7 +374,9 @@ if (!Object.keys(loaderTypes.audiosprite).length) {
 shell.ShellString('\n}\n\n').toEnd(assetsClassFile);
 
 shell.ShellString('export namespace GoogleWebFonts {').toEnd(assetsClassFile);
-var webFontsToUse = JSON.parse(webpackConfig.plugins[webpackConfig.plugins.findIndex(function(element) { return (element instanceof webpack.DefinePlugin); })].definitions.GOOGLE_WEB_FONTS);
+var webFontsToUse = JSON.parse(webpackConfig.plugins[webpackConfig.plugins.findIndex(function (element) {
+    return (element instanceof webpack.DefinePlugin);
+})].definitions.GOOGLE_WEB_FONTS);
 if (!webFontsToUse.length) {
     shell.ShellString('\n    class IExistSoTypeScriptWillNotComplainAboutAnEmptyNamespace {}').toEnd(assetsClassFile);
 } else {
