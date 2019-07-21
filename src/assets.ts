@@ -6,11 +6,6 @@ export namespace Images {
 
         static getPNG(): string { return require('assets/images/Background/background.png'); }
     }
-    export class ImagesEnemiesBug1 {
-        static getName(): string { return 'Bug1'; }
-
-        static getPNG(): string { return require('assets/images/Enemies/Bug1.png'); }
-    }
     export class ImagesEnemiesBug2 {
         static getName(): string { return 'Bug2'; }
 
@@ -20,6 +15,11 @@ export namespace Images {
         static getName(): string { return 'Monster'; }
 
         static getPNG(): string { return require('assets/images/Enemies/Monster.png'); }
+    }
+    export class ImagesObjectsBDE1 {
+        static getName(): string { return 'BDE-01'; }
+
+        static getPNG(): string { return require('assets/images/Objects/BDE-01.png'); }
     }
     export class ImagesObjectsBullet1 {
         static getName(): string { return 'Bullet1'; }
@@ -35,6 +35,11 @@ export namespace Images {
         static getName(): string { return 'Bullet3'; }
 
         static getPNG(): string { return require('assets/images/Objects/Bullet3.png'); }
+    }
+    export class ImagesObjectsClose {
+        static getName(): string { return 'close'; }
+
+        static getPNG(): string { return require('assets/images/Objects/close.png'); }
     }
     export class ImagesObjectsCookie {
         static getName(): string { return 'cookie'; }
@@ -59,32 +64,42 @@ export namespace Images {
 }
 
 export namespace Spritesheets {
-    export class ImagesTowersTowerMonster1135132 {
-        static getName(): string { return 'TowerMonster1.[135,132]'; }
+    export class ImagesEnemiesBug1173140 {
+        static getName(): string { return 'Bug1.[173,140]'; }
 
-        static getPNG(): string { return require('assets/images/Towers/TowerMonster1.[135,132].png'); }
-        static getFrameWidth(): number { return 135; }
-        static getFrameHeight(): number { return 132; }
+        static getPNG(): string { return require('assets/images/Enemies/Bug1.[173,140].png'); }
+        static getFrameWidth(): number { return 173; }
+        static getFrameHeight(): number { return 140; }
         static getFrameMax(): number { return -1; }
         static getMargin(): number { return 0; }
         static getSpacing(): number { return 0; }
     }
-    export class ImagesTowersTowerMonster2115148 {
-        static getName(): string { return 'TowerMonster2.[115,148]'; }
+    export class ImagesTowersTowerMonster1100110 {
+        static getName(): string { return 'TowerMonster1.[100,110]'; }
 
-        static getPNG(): string { return require('assets/images/Towers/TowerMonster2.[115,148].png'); }
-        static getFrameWidth(): number { return 115; }
-        static getFrameHeight(): number { return 148; }
+        static getPNG(): string { return require('assets/images/Towers/TowerMonster1.[100,110].png'); }
+        static getFrameWidth(): number { return 100; }
+        static getFrameHeight(): number { return 110; }
         static getFrameMax(): number { return -1; }
         static getMargin(): number { return 0; }
         static getSpacing(): number { return 0; }
     }
-    export class ImagesTowersTowerMonster3147184 {
-        static getName(): string { return 'TowerMonster3.[147,184]'; }
+    export class ImagesTowersTowerMonster2100110 {
+        static getName(): string { return 'TowerMonster2.[100,110]'; }
 
-        static getPNG(): string { return require('assets/images/Towers/TowerMonster3.[147,184].png'); }
-        static getFrameWidth(): number { return 147; }
-        static getFrameHeight(): number { return 184; }
+        static getPNG(): string { return require('assets/images/Towers/TowerMonster2.[100,110].png'); }
+        static getFrameWidth(): number { return 100; }
+        static getFrameHeight(): number { return 110; }
+        static getFrameMax(): number { return -1; }
+        static getMargin(): number { return 0; }
+        static getSpacing(): number { return 0; }
+    }
+    export class ImagesTowersTowerMonster3100110 {
+        static getName(): string { return 'TowerMonster3.[100,110]'; }
+
+        static getPNG(): string { return require('assets/images/Towers/TowerMonster3.[100,110].png'); }
+        static getFrameWidth(): number { return 100; }
+        static getFrameHeight(): number { return 110; }
         static getFrameMax(): number { return -1; }
         static getMargin(): number { return 0; }
         static getSpacing(): number { return 0; }

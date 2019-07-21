@@ -1,4 +1,4 @@
-import {Audio} from '../../assets';
+import {Audio} from '../assets';
 export class AudioManager {
 	private static _instance: AudioManager;
 	private game: Phaser.Game;

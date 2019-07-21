@@ -1,5 +1,5 @@
 import * as AssetUtils from '../utils/assetUtils';
-import {AudioManager} from '../ui/managers/AudioManager';
+import {AudioManager} from '../managers/AudioManager';
 export default class Preloader extends Phaser.State {
 	private preloadBarSprite: Phaser.Sprite;
 	private preloadFrameSprite: Phaser.Sprite;

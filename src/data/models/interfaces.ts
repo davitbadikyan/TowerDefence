@@ -8,4 +8,12 @@ export interface Constants {
 	healthBarPosition: Position;
 	goldTextPosition: Position;
 	cookiePosition: Position;
+	towerSelect: {
+		closeButton: Position;
+		monsterSelect: {
+			priceMarginTop: number,
+			marginLeft: number,
+			initialMargin: number
+		}
+	}
 }

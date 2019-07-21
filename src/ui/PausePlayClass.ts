@@ -15,10 +15,10 @@ export class PausePlayText extends Phaser.Text {
 	}
 
 	private handleButtonOnClick(): void {
-		if (this.paused){
+		if (this.paused) {
 			this.text = 'Pause';
 			this.paused = false;
-		}else{
+		} else {
 			this.text = 'Play';
 			this.paused = true;
 		}
