@@ -6,16 +6,6 @@ export namespace Images {
 
         static getPNG(): string { return require('assets/images/Background/background.png'); }
     }
-    export class ImagesEnemiesBug2 {
-        static getName(): string { return 'Bug2'; }
-
-        static getPNG(): string { return require('assets/images/Enemies/Bug2.png'); }
-    }
-    export class ImagesEnemiesMonster {
-        static getName(): string { return 'Monster'; }
-
-        static getPNG(): string { return require('assets/images/Enemies/Monster.png'); }
-    }
     export class ImagesObjectsBDE1 {
         static getName(): string { return 'BDE-01'; }
 
@@ -64,12 +54,32 @@ export namespace Images {
 }
 
 export namespace Spritesheets {
-    export class ImagesEnemiesBug1173140 {
-        static getName(): string { return 'Bug1.[173,140]'; }
+    export class ImagesEnemiesBug1150110 {
+        static getName(): string { return 'Bug1.[150,110]'; }
 
-        static getPNG(): string { return require('assets/images/Enemies/Bug1.[173,140].png'); }
-        static getFrameWidth(): number { return 173; }
-        static getFrameHeight(): number { return 140; }
+        static getPNG(): string { return require('assets/images/Enemies/Bug1.[150,110].png'); }
+        static getFrameWidth(): number { return 150; }
+        static getFrameHeight(): number { return 110; }
+        static getFrameMax(): number { return -1; }
+        static getMargin(): number { return 0; }
+        static getSpacing(): number { return 0; }
+    }
+    export class ImagesEnemiesBug2150110 {
+        static getName(): string { return 'Bug2.[150,110]'; }
+
+        static getPNG(): string { return require('assets/images/Enemies/Bug2.[150,110].png'); }
+        static getFrameWidth(): number { return 150; }
+        static getFrameHeight(): number { return 110; }
+        static getFrameMax(): number { return -1; }
+        static getMargin(): number { return 0; }
+        static getSpacing(): number { return 0; }
+    }
+    export class ImagesEnemiesMonster120110 {
+        static getName(): string { return 'Monster.[120,110]'; }
+
+        static getPNG(): string { return require('assets/images/Enemies/Monster.[120,110].png'); }
+        static getFrameWidth(): number { return 120; }
+        static getFrameHeight(): number { return 110; }
         static getFrameMax(): number { return -1; }
         static getMargin(): number { return 0; }
         static getSpacing(): number { return 0; }

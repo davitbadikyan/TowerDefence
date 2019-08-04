@@ -18,9 +18,11 @@ export class PausePlayText extends Phaser.Text {
 		if (this.paused) {
 			this.text = 'Pause';
 			this.paused = false;
+			this.game.paused = false;
 		} else {
 			this.text = 'Play';
 			this.paused = true;
+			this.game.paused = true;
 		}
 
 	}

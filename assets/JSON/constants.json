@@ -12,6 +12,10 @@
   "healthBarPosition": {"x": 50, "y": 188},
   "goldTextPosition": {"x": 780, "y": 188},
   "cookiePosition": {"x": 1570, "y": 700},
+  "rotationPoint1": {"x": 1590, "y": 390},
+  "rotationPoint2": {"x": 1590, "y": 615},
+  "rotationPoint3": {"x": 305, "y": 615},
+  "rotationPoint4": {"x": 305, "y": 845},
   "towerSelect": {
     "closeButton": {"x": 1740, "y": 5},
     "monsterSelect": {
